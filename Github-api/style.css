@@ -1,0 +1,214 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+:root{
+  --primary: #0099aa
+}
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #1a7d80;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #1a7d90;
+  width: 10px;
+}
+body{
+  margin-top: 2rem;
+  font-family: "Lato", sans-serif;
+  background-color: var(--primary);
+font-size: 1.1rem;
+}
+.center h3{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.center p{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.form input{
+  border: none;
+  background: #1a7d88;
+  border-radius: 1rem;
+  outline: none;
+  font-family: inherit;
+  width: 20rem;
+  height: 3em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+input::placeholder{
+  color:#ddd;
+  font-family: inherit;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+    background-color: #1a7d90;
+  max-width: 400px;
+  margin-left: 34rem;
+  margin-top: 8rem;
+  position: absolute;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: #1a7d90 50% #1a7d88 100%;
+}
+.card img{
+  width: 150px;
+  height: 150px;
+  border: 20px groove #1a7d88;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: 6.9rem;
+  margin-top: -4rem;
+}
+ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 5px;
+}
+/* ================================ */
+/* mobile responsiveness */
+
+@media screen and (max-width: 320px) {
+  .card{
+    /* display: none; */
+    margin-left: 0.8rem;
+    max-width: 250px;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .card img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.9rem;
+  }
+  input{
+    margin-top: -7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card{
+    /* display: none; */
+    margin-left: 0.9rem;
+    max-width: 250px;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .card img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.9rem;
+  }
+  input{
+    margin-top: -7rem;
+  }
+  .lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-left: -60rem;
+  }
+}
+a{
+  text-decoration: wavy red;
+}
+
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-left: 1rem;
+  margin-top: 3rem;
+}
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #fff;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
